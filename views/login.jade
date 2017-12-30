@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title Login - RS Racing UFRGS
+        // Bootstrap core CSS
+        link(href='/static/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+        // Custom fonts for this template
+        link(href='/static/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
+        link(rel='shortcut icon', href='/img/favicon.ico')
+        script(src="https://cdn.auth0.com/js/lock/10.3/lock.min.js")
+    body(style="background-image: url('/img/header-bg.jpg')")
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='/')
+                    img.img-fluid(src='/img/logo.png', alt='')
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link(href='/') Voltar
+        div(id="root" style="width: 280px; margin: 40px auto; padding: 10px;" )
+        script.
+            var lock = new Auth0Lock('#{env.AUTH0_CLIENT_ID}', '#{env.AUTH0_DOMAIN}', { 
+                auth: {
+                      redirectUrl: '#{env.AUTH0_CALLBACK_URL}'
+                    , responseType: 'code'
+                    , params: {
+                      scope: 'openid profile'
+                }
+            }});
+            lock.show();

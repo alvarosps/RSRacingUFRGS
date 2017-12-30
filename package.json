@@ -1,0 +1,43 @@
+{
+  "name": "rsracingufrgs",
+  "version": "3.10.10",
+  "description": "Site oficial da equipe de Formula SAE RS Racing UFRGS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarosps/RSRacingUFRGS.git"
+  },
+  "keywords": [
+    "formulasae",
+    "rsracingufrgs"
+  ],
+  "author": "alvarosps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarosps/RSRacingUFRGS/issues"
+  },
+  "homepage": "https://github.com/alvarosps/RSRacingUFRGS#readme",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.18.1",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "jade": "^1.11.0",
+    "logger": "0.0.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.11",
+    "monk": "^6.0.4",
+    "morgan": "^1.8.2",
+    "passport": "^0.4.0",
+    "passport-auth0": "^0.6.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
+  }
+}

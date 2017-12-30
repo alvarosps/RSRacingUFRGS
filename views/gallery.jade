@@ -1,0 +1,80 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='alvarosps')
+        title Galeria - RS Racing UFRGS
+        link(href='/static/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+        // Bootstrap core CSS
+        link(href='/static/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+        // Custom styles for this template
+        link(href='/stylesheets/thumbnail-gallery.css', rel='stylesheet')
+        link(href='/stylesheets/demogallery.css', rel='stylesheet')
+        link(rel='shortcut icon', href='/img/favicon.ico')
+    body
+        // Navigation
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='/')
+                    img.img-fluid(src='/img/logo.png', alt='')
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link(href='/') Voltar
+        // Page Content
+        .container
+            h1.my-4.text-center Galeria de imagens
+            .demo-gallery
+                #lightgallery.row.text-center.text-lg-left
+                    each item, i in galeria
+                        a.col-lg-3.col-md-4.col-xs-6.d-block.mb-4.h-100(href='/img/portfolio/#{item.imagem}')
+                            img.img-fluid.img-thumbnail(src='/img/portfolio/#{item.imagem}', alt='#{item.nome}')
+                            .demo-gallery-poster
+                                img(src='/img/zoom.png')
+        // /.container
+        // Footer
+        // Footer
+        footer
+            .container
+                .row
+                    .col-md-4
+                        span.copyright Copyright © RS Racing UFRGS 2017
+                    .col-md-4
+                        ul.list-inline.social-buttons
+                            li.list-inline-item
+                                a(href='https://www.youtube.com/channel/UCeW--7uUxS2YpRSU7Op_GnQ')
+                                    i.fa.fa-youtube
+                            li.list-inline-item
+                                a(href='https://www.facebook.com/RSRacingTeam/')
+                                    i.fa.fa-facebook
+                            li.list-inline-item
+                                a(href='https://www.instagram.com/rsracingufrgs/')
+                                    i.fa.fa-linkedin
+            // /.container
+        // Bootstrap core JavaScript
+        script(src='/static/jquery/jquery.min.js')
+        script(src='/static/popper/popper.min.js')
+        script(src='/static/bootstrap/js/bootstrap.min.js')
+        //LightGallery
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js')
+        script(src='/js/lightgallery.min.js')
+        // lightgallery plugins
+        script(src='/js/lg-thumbnail.min.js')
+        script(src='/js/lg-fullscreen.min.js')
+        script(src='/js/prettify.js')
+        script(src='/js/transition.js')
+        script(src='/js/collapse.js')
+        script(src='/js/lightgallery.js')
+        script(src='/js/demos.js')
+
+        script(type='text/javascript').
+            $(document).ready(function() {
+            $('#lightgallery').lightGallery();
+            });
+
+        
+

@@ -1,0 +1,1018 @@
+doctype html
+html(lang='en')
+
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title RS Racing UFRGS
+        // Bootstrap core CSS
+        link(href='/static/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+        // Custom fonts for this template
+        link(href='/static/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+        // Custom styles for this template
+        link(href='/stylesheets/rsracingufrgs.css', rel='stylesheet')
+        script(src="https://cdn.auth0.com/js/lock/10.3/lock.min.js")
+        link(rel='shortcut icon', href='/img/favicon.ico')
+    body#page-top
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top')
+                    img.img-fluid(src='/img/logo.png', alt='')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fa.fa-bars
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto(style='text-align:center;')
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#formulasae') Formula SAE
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#prototipos') Protótipos
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#sobre') Sobre
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#team') Equipe
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#patrocinadores') Patrocinadores
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contact') Contato
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='/blog') Eventos e Notícias
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='/galeria') Galeria
+
+                        
+        // Header
+        header.masthead
+            .container
+                .intro-text
+                    .intro-lead-in Seja bem vindo ao site oficial da
+                    .intro-heading RS Racing UFRGS!
+                    a.btn.btn-xl.js-scroll-trigger(href='#descricao') Saiba mais
+        section#descricao.bg-light
+            .container
+                .row
+                    .col-lg-12.text-center
+                        img.img-fluid(src='/img/logocompleto.png', alt='')
+                        p(style='text-align: justify;')
+                            | A RS Racing UFRGS é a equipe de Fórmula SAE da UFRGS, que tem como objetivo o projeto e construção de um protótipo de carro de corrida estilo Fórmula. O carro deve ser construído por um grupo de alunos em um período de um ano e ser levado para a competição anual para o julgamento e comparação com outros veículos de universidades de todo o país. A equipe tem como missão proporcionar o desenvolvimento profissional e pessoal dos membros, através de experiências práticas e multidisciplinares, complementando a graduação.
+                        a.btn.btn-xl.portfolio-link(data-toggle='modal', href='#titulos') Títulos da Equipe
+        // Inspiracao
+        section#inspiracao
+            .container
+                .row
+                    .col-lg-12.text-center
+                        h2.section-heading Inspiração
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fa.fa-circle.fa-stack-2x.text-primary
+                            i.fa.fa-car.fa-stack-1x.fa-inverse
+                        h4.service-heading Missão
+                        p.text-muted
+                            | Proporcionar o desenvolvimento profissional e pessoal dos membros, através de experiências práticas e multidisciplinares, complementando a graduação.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fa.fa-circle.fa-stack-2x.text-primary
+                            i.fa.fa-dot-circle-o.fa-stack-1x.fa-inverse
+                        h4.service-heading
+                            | Visão
+                        p.text-muted
+                            | Tornar-se uma equipe de referência técnica e organizacional no Brasil até 2018.
+
+                    .col-md-4
+                        a.portfolio-link(data-toggle='modal', href='#visao')
+                            span.fa-stack.fa-4x
+                                i.fa.fa-circle.fa-stack-2x.text-primary
+                                i.fa.fa-user.fa-stack-1x.fa-inverse
+                            h4.service-heading(style='color:black;') Valores
+                            ul.fa-ul(style='color:black;')
+                                li
+                                    i.fa-li.fa.fa-handshake-o
+                                    | Companheirismo
+                                li
+                                    i.fa-li.fa.fa-heart
+                                    | Paixão pelo projeto
+                                li
+                                    i.fa-li.fa.fa-graduation-cap
+                                    | Transferência de conhecimento
+                                li
+                                    i.fa-li.fa.fa-clock-o
+                                    | Organização e profissionalismo
+                                li
+                                    i.fa-li.fa.fa-line-chart
+                                    | Insatisfação Positiva
+                                li
+                                    i.fa-li.fa.fa-eye
+                                    | Integridade
+
+        // Sobre Formula SAE Grid
+        section#formulasae.bg-light
+            #portfolio.container
+                .row
+                    .col-lg-12.text-center
+                        h2.section-heading Sobre o Fórmula SAE
+                .row
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#sae')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/formulasae/saelogo.png', alt='')
+                        .portfolio-caption
+                            h4 O que é
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#provasestaticas')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/formulasae/provas_estaticas.jpg', alt='')
+                        .portfolio-caption
+                            h4 Provas Estáticas
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#provasdinamicas')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/formulasae/provas_dinamicas.jpg', alt='')
+                        .portfolio-caption
+                            h4 Provas Dinâmicas
+        // Protótipos Grid
+
+        section#prototipos
+            #portfolio.container
+                .row
+                    .col-lg-12.text-center
+                        h2.section-heading Protótipos
+                .row
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#rs01')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/prototipos/rs01/rs01_3.jpg', alt='')
+                        .portfolio-caption
+                            h4 RS#01
+                            p.text-muted Protótipo 2011
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#rs02')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/prototipos/rs02/rs02_2.jpg', alt='')
+                        .portfolio-caption
+                            h4 RS#02
+                            p.text-muted Protótipo 2012
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#rs03')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/prototipos/rs03/rs03_2.jpg', alt='')
+                        .portfolio-caption
+                            h4 RS#03
+                            p.text-muted Protótipo 2013
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#bagual')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/prototipos/bagual/bagual_2.jpg', alt='')
+                        .portfolio-caption
+                            h4 Bagual
+                            p.text-muted Protótipo 2015
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#minuano')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/prototipos/minuano/minuano_3.jpg', alt='')
+                        .portfolio-caption
+                            h4 Minuano
+                            p.text-muted Protótipo 2016
+                    .col-md-4.col-sm-6.portfolio-item
+                        a.portfolio-link(data-toggle='modal', href='#ximango')
+                            .portfolio-hover
+                                .portfolio-hover-content
+                                    i.fa.fa-plus.fa-3x
+                            img.img-fluid(src='/img/prototipos/ximango/ximango_1.jpg', alt='')
+                        .portfolio-caption
+                            h4 Ximango
+                            p.text-muted Protótipo 2017
+        // Sobre
+        section#sobre.bg-light
+            .container
+                .row
+                    .col-lg-12.text-center
+                        h2.section-heading A RS Racing UFRGS
+                .row
+                    .col-lg-12
+                        ul.timeline
+                            li
+                                .timeline-image
+                                    img.rounded-circle.img-fluid(src='/img/about/2010_2011.png', alt='')
+                                .timeline-panel
+                                    .timeline-heading
+                                        h4 2010-2011
+                                        h4.subheading O Inicio
+                                    .timeline-body
+                                        p.text-muted
+                                            | Entre 2010 e 2011, a equipe enfrentou diversos desafios para estruturar-se, principalmente por se tratar do primeiro ano de trabalho no projeto. Primeiramente, decidiu-se que seriam construídos dois carros partindo inteiramente “do zero”, sendo o primeiro para aprendizado e o segundo, já totalmente enquadrado às normas, para a competição. Muito tempo deste primeiro ano foi dedicado à concepção e entendimento referente ao desenho destes carros, tendo que projetá-los dentro do regulamento estipulado em padrão internacional, para fazer com que a RS Racing UFRGS participasse de sua primeira competição. Além do mais, houve muita dificuldade com a obtenção de recursos financeiros para serem empregados na aquisição de ferramentas e também na aquisição de materiais/matéria prima. A busca de apoio dentro da universidade, busca de patrocinadores interessados no projeto, divulgação do projeto dentro dos cursos de Engenharia - entre tantos outros empecilhos - também contribuíram para que o tempo deixado para o foco em projetar e construir o carro fosse reduzido. Mesmo assim, com muito empenho, os alunos conseguiram conciliar o tempo e os contratempos para o desenvolvimento das diversas áreas que compõem o carro, como suspensão, motor, freios, chassi e marketing. Assim, na competição de 2011, a RS Racing UFRGS alcançou a 17ª colocação dentre as 25 equipes participantes. 
+                            li.timeline-inverted
+                                .timeline-image
+                                    img.rounded-circle.img-fluid(src='/img/about/2012.png', alt='')
+                                .timeline-panel
+                                    .timeline-heading
+                                        h4 2012
+                                        h4.subheading O Diferentão
+                                    .timeline-body
+                                        p.text-muted
+                                            | Em 2012, a equipe resolveu inovar em um conceito jamais visto na história da competição nacional de Formula SAE. Em busca de uma concepção diferente da disposição dos componentes no veículo, a RS Racing UFRGS desenvolveu um projeto de carro com motor lateral. O intuito de aplicar essa inovação foi de obter ganhos, tanto na parte dinâmica do carro, como na redução de tamanho e peso do veículo. Este projeto recebeu grande destaque da comissão julgadora, não apenas pela surpresa dos mesmos ao verem o carro, mas também por ter sido considerado inovador no Brasil. Nesta 9ª competição, em 2012, a equipe alcançou a 11ª colocação dentre as 27 equipes participantes, sendo a melhor colocação da equipe em toda sua história.
+                            li
+                                .timeline-image
+                                    img.rounded-circle.img-fluid(src='/img/about/padrao.png', alt='')
+                                .timeline-panel
+                                    .timeline-heading
+                                        h4 2013
+                                        h4.subheading A Saga Continua
+                                    .timeline-body
+                                        p.text-muted
+                                            | No ano de 2013, devido aos bons resultados obtidos com o motor lateral, a equipe resolveu dar continuidade ao projeto, buscando apenas aperfeiçoar os demais componentes do carro. Muito foi trabalhado para que o carro fosse novamente posto nos padrões da competição e fizesse com que a UFRGS tivesse mais uma vez uma equipe representando-a. A equipe decaiu para a 19ª colocação dentre as 31 equipes participantes da 10ª edição do campeonato. Mesmo obtendo uma colocação inferior em 2013, esse resultado foi importante para que a equipe amadurecesse e tomasse decisões sobre o seu futuro. Decidiu-se que em 2014 a equipe teria que passar por um processo de reestruturação, visando o foco na sua organização e planejamento.
+                            li.timeline-inverted
+                                .timeline-image
+                                    img.rounded-circle.img-fluid(src='/img/about/padrao.png', alt='')
+                                .timeline-panel
+                                    .timeline-heading
+                                        h4 2014
+                                        h4.subheading Uma Reestruturação
+                                    .timeline-body
+                                        p.text-muted
+                                            | No ano de 2014, decidiu-se reestruturar a equipe. Trocou-se o capitão, antigos integrantes voltaram ao time após retorno ao Brasil e novos integrantes juntaram-se ao projeto, entre eles alunos da graduação e pós-graduação da universidade. Além disso, buscou-se mais apoio dentro do departamento de Engenharia Mecânica da UFRGS, por meio de seu corpo docente, fortalecendo assim a RS Racing UFRGS. Essa busca teve o intuito de obter melhores resultados nas futuras competições e fazer com que o projeto evolua cada vez mais dentro da Escola de Engenharia.
+                            li.timeline-inverted
+                                .timeline-image
+                                    img.rounded-circle.img-fluid(src='/img/about/2015.png', alt='')
+                                .timeline-panel
+                                    .timeline-heading
+                                        h4 2015
+                                        h4.subheading O Retorno
+                                    .timeline-body
+                                        p.text-muted
+                                            | Depois de um ano sem participar da competição  devido ao dissolvimento da equipe no fim de 2013, alguns membros decidiram que estava na hora de reativar o projeto, mas com uma postura  totalmente diferente. E em 2015 a equipe voltou muito mais focada, organizada e de olho no top 5. Neste ano foi adaptado um novo motor de 400 cilindradas no chassis do carro de 2013. Algumas peças foram reprojetadas para baretear o custo e facilitar a fabricação,e dessa forma o carro ficou pronto e começou a ser testado mais de três meses antes de competir, com isso foi possível garantir a confiabilidade de todos os sistemas antes de por o carro na pista. Confiabilidade foi a palavra chave para que a equipe conseguisse a 1° colocação na prova do enduro, 1° na prova de economia de combustível, 3° na prova de business case e 2° na colocação geral. Esses feitos foram inéditos na historia da equipe e um reflexo de uma equipe muito mais organizada. 2015 também marcou o fim dos carros de motor lateral da RS RACING UFRGS.
+                            li.timeline-inverted
+                                .timeline-image
+                                    img.rounded-circle.img-fluid(src='/img/about/2016.png', alt='')
+                                .timeline-panel
+                                    .timeline-heading
+                                        h4 2016
+                                        h4.subheading A UFRGS nos EUA
+                                    .timeline-body
+                                        p.text-muted
+                                            | Após se classificar em 2° lugar em 2015 a equipe ganhou a inscriçao na etapa internacional da competiçao,que acontece em Lincoln, Nebraska. A partir daí foi decidido construir um novo protótipo, que deveria ser mais simples de fabricar devido ao tempo restrito e deveria ser mais competitivo. Devido a alguns problemas no envio do carro a equipe foi para competir nas provas estáticas, ficando em 10° no busines case,na frente de universidsdes renomadas como o MIT. Após a etapa internacional a equipe voltou focada em repetir o resultado do ano anterior, mas devido a problemas mecânicos no motor, não foi possivel participar da prova de aceleração e problemas elétricos na luz de freio desclassificaram a RS RACING UFRGS da prova do enduro. Porém, a equipe subiu uma colocação na prova de busines case em relação a etapa nacional de 2015, ficando em 2° lugar.
+                            li.timeline-inverted
+                                a.portfolio-link(data-toggle='modal', href='#facapartedaequipe')
+                                    .timeline-image(style='background-color: #f71b1b')
+                                        h4
+                                            | Faça parte
+                                            br
+                                            | da nossa
+                                            br
+                                            | Equipe!
+                                    
+                                    
+
+        // Team
+        section#team
+            .container
+                .row
+                    .col-lg-12.text-center
+                        h2.section-heading Nossa Equipe
+                //hr
+                //.row
+                    .col-lg-12.text-center
+                        h3.section-heading Powertrain
+                //.row
+                    .col-sm-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='/img/team/alexandre.png', alt='')
+                            h4 Alexandre
+                            h6 Líder
+                            p.text-muted Engenharia Mecânica
+                            ul.list-inline.social-buttons
+                                li.list-inline-item
+                                    a(href='#')
+                                        i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Capitão
+                .row
+                    each membro, i in capitao
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Aerodinâmica
+                .row
+                    each membro, i in aerodinamica
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Chassi
+                .row
+                    each membro, i in chassi
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Controles
+                .row
+                    each membro, i in controles
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Drivetrain
+                .row
+                    each membro, i in drivetrain
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Eletrônica
+                .row
+                    each membro, i in eletronica
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Gestão
+                .row
+                    each membro, i in gestao
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Marketing
+                .row
+                    each membro, i in marketing
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Powertrain
+                .row
+                    each membro, i in powertrain
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+                hr
+                .row
+                    .col-lg-12.text-center
+                        h3.section-heading Suspensão
+                .row
+                    each membro, i in suspensao
+                        .col-sm-4
+                            .team-member
+                                img.mx-auto.rounded-circle(src='/img/team/#{membro.imagem}', alt='#{membro.nome}')
+                                if membro.lider == 1
+                                    h6 Líder
+                                h4 #{membro.nome}
+                                p.text-muted #{membro.curso}
+                                ul.list-inline.social-buttons
+                                    li.list-inline-item
+                                        a(href="mailto:#{membro.email}")
+                                            i.fa.fa-envelope
+        // Patrocinadores
+        section#patrocinadores.py-5
+            .container
+                hr
+                .col-lg-12.text-center
+                        h2.section-heading Patrocinadores
+                .row
+                    each patrocinador, i in patrocinadores1
+                        .col-md-3.col-sm-6
+                            a(href='#{patrocinador.site}')
+                                img.img-fluid.d-block.mx-auto(src='/img/logos/#{patrocinador.imagem}', alt='#{patrocinador.nome}')
+                hr
+                .row
+                    each patrocinador, i in patrocinadores2
+                        .col-md-3.col-sm-6
+                            a(href='#{patrocinador.site}')
+                                img.img-fluid.d-block.mx-auto(src='/img/logos/#{patrocinador.imagem}', alt='#{patrocinador.nome}')
+                hr
+                .row
+                    each patrocinador, i in patrocinadores3
+                        .col-md-3.col-sm-6
+                            a(href='#{patrocinador.site}')
+                                img.img-fluid.d-block.mx-auto(src='/img/logos/#{patrocinador.imagem}', alt='#{patrocinador.nome}')
+                br
+                .col-lg-12.text-center
+                    a.btn.btn-xl.portfolio-link(data-toggle='modal', href='#sejapatrocinador') Quer ser nosso Patrocinador?
+        // Contact
+        section#contact
+            .container
+                .row
+                    .col-lg-12.text-center
+                        h2.section-heading Entre em Contato!
+                .row
+                    .col-lg-12
+                        form#contactForm(name='sentMessage', action='C:\\Users\\asilva\\Documents\\RSRacingUFRGSsite\\public\\contact_me.php', novalidate='')
+                            .row
+                                .col-md-6
+                                    .form-group
+                                        input#name.form-control(type='text', placeholder='Nome *', required='', data-validation-required-message='Please enter your name.')
+                                        p.help-block.text-danger
+                                    .form-group
+                                        input#email.form-control(type='email', placeholder='Email *', required='', data-validation-required-message='Please enter your email address.')
+                                        p.help-block.text-danger
+                                    .form-group
+                                        input#phone.form-control(type='subject', placeholder='Assunto *', required='', data-validation-required-message='Please enter your phone number.')
+                                        p.help-block.text-danger
+                                .col-md-6
+                                    .form-group
+                                        textarea#message.form-control(placeholder='Mensagem *', required='', data-validation-required-message='Please enter a message.')
+                                        p.help-block.text-danger
+                                .clearfix
+                                .col-lg-12.text-center
+                                    #success
+                                    button#sendMessageButton.btn.btn-xl(type='submit') Enviar Mensagem
+        // Footer
+        footer
+            .container
+                .row
+                    .col-md-4
+                        span.copyright Copyright © RS Racing UFRGS 2017
+                    .col-md-4
+                        ul.list-inline.social-buttons
+                            li.list-inline-item
+                                a(href='https://www.youtube.com/channel/UCeW--7uUxS2YpRSU7Op_GnQ')
+                                    i.fa.fa-youtube
+                            li.list-inline-item
+                                a(href='https://www.facebook.com/RSRacingTeam/')
+                                    i.fa.fa-facebook
+                            li.list-inline-item
+                                a(href='https://www.instagram.com/rsracingufrgs/')
+                                    i.fa.fa-linkedin
+                    //.col-md-4
+                        ul.list-inline.quicklinks
+                            li.list-inline-item
+                                a(href='#') Privacy Policy
+                            li.list-inline-item
+                                a(href='#') Terms of Use
+        // Portfolio Modals
+        // Formula SAE
+        #sae.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    img.img-fluid(src='/img/formulasae/saelogo.png', alt='')
+                                    p(style='text-align: justify;')
+                                        | A Formula SAE é uma competição estudantil organizada pela Society of Automotive Engineers - SAE.
+                                        | A competição nasceu em 1978 e foi inicialmente denominada SAE Mini Indy.
+                                        | Atualmente há, aproximadamente, mais de 585 equipes participantes ao redor de todo mundo.
+                                        | A etapa brasileira é feita no fim do ano em Piracicaba - SP, na qual o primeiro e o segundo colocado na categoria
+                                        | combustão interna ganham respectivamente uma inscrição nas competições de Michigan e Lincoln, nos EUA,
+                                        | e o primeiro lugar na categoria elétrico para Lincoln.
+                                        | O conceito por trás da Fórmula SAE é uma companhia industrial fictícia que contratou um time estudantil
+                                        | para desenvolver um pequeno carro de Fórmula 1.
+                                        | A competição, com duração de três a quatro dias, é separada em provas estáticas e dinâmicas.
+
+
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Provas Estaticas
+        #provasestaticas.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    img.img-fluid(src="/img/formulasae/provas_estaticas.jpg")
+                                    h3(style='text-align: center') Provas Estáticas
+                                    div(style='text-align: justify')
+                                        p(style='text-align: justify;')
+                                            | As provas estáticas avaliam o projeto do veículo sob o ponto de vista de engenharia e também do mercado. As equipes precisam justificar o projeto de cada componente do veículo para juízes que são do ramo automobilístico. Além disso, é feito um levantamento de custos e manufatura e também uma apresentação de negócios visando a uma produção em massa do protótipo.
+                                        p(style='text-align: justify;')
+                                            | Cada carro é submetido à uma rigorosa inspeção técnica para verificar se a construção e projeto do carro está conforme o regulamento da competição, apenas após esta inspeção ele é liberado para ir para a pista participar das provas dinâmicas.
+
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Provas Dinamicas
+        #provasdinamicas.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h3(style='text-align:center') Provas Dinâmicas
+                                    #texto_skip_pad
+                                        h4(style='text-align: center') Skip Pad
+                                        p(style='text-align: center')
+                                            | No Skip Pad o carro deve percorrer um trajeto em forma de '8' para testar o desempenho e estabilidade em curvas.
+                                        .jumbotron
+                                            object
+                                                param(name='movieskippad', value='https://www.youtube.com/watch?v=3xgkIQhRfII')
+                                                param(name='allowFullScreen', value='true')
+                                                param(name='allowscriptaccess', value='always')
+                                                iframe(width='300', height='200', src='https://www.youtube.com/embed/3xgkIQhRfII', frameborder='0', allowfullscreen='')
+                                    #texto_aceleracao
+                                        h4(style='text-align: center') Aceleração
+                                        p(style='text-align: center')
+                                            | As provas de Aceleração consistem em uma simples reta de 75m, feita com o pé no fundo no acelerador. Elas medem, como facilmente dá para ter ideia, a aceleração e velocidade final do veículo.
+                                        .jumbotron
+                                            object
+                                                param(name='movieaceleracao', value='https://www.youtube.com/watch?v=z9tx-2oYsDc')
+                                                param(name='allowFullScreen', value='true')
+                                                param(name='allowscriptaccess', value='always')
+                                                iframe(width='300', height='200', src='https://www.youtube.com/embed/z9tx-2oYsDc', frameborder='0', allowfullscreen='')
+                                    #texto_autocross
+                                        h4(style='text-align: center') AutoCross
+                                        p(style='text-align: center')
+                                            | O AutoCross é um trajeto de 1km com uma pista de largura de três metros que tem como ideia simplesmente ver qual é o carro mais rápido.
+                                        .jumbotron
+                                            object
+                                                param(name='movieautocross', value='https://www.youtube.com/watch?v=6z8yVhfVjqU')
+                                                param(name='allowFullScreen', value='true')
+                                                param(name='allowscriptaccess', value='always')
+                                                iframe(width='300', height='200', src='https://www.youtube.com/embed/6z8yVhfVjqU', frameborder='0', allowfullscreen='')
+                                    #texto_enduro
+                                        h4(style='text-align: center') Enduro
+                                        p(style='text-align: center')
+                                            | O Enduro, última etapa da competição, consiste em uma pista de 22km de distância para testar a resistência e economia de combústivel de cada carro. Aqui só os fortes sobrevivem.
+                                        .jumbotron
+                                            object
+                                                param(name='movieenduro', value='https://www.youtube.com/watch?v=CCZLuIpuhOg')
+                                                param(name='allowFullScreen', value='true')
+                                                param(name='allowscriptaccess', value='always')
+                                                iframe(width='300', height='200', src='https://www.youtube.com/embed/CCZLuIpuhOg', frameborder='0', allowfullscreen='')
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // RS#01
+        #rs01.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h3(style='text-align: center')  Protótipo 2011 - RS#01
+                                    br
+                                    ul(style='text-align: justify;')
+                                        li
+                                            h4 Descrição Técnica
+                                        ul
+                                            li Motor CB 400 Carburado, Traseiro
+                                            li Refrigeração a ar
+                                    img(src='/img/prototipos/rs01/rs01_3.jpg' width='500' height='250')
+                                    img(src='/img/prototipos/rs01/rs01_1.png' width='500' height='250')
+                                    img(src='/img/prototipos/rs01/rs01_2.png' width='500' height='250')
+                                    br  
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // RS#02
+        #rs02.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h3(style='text-align: center')  Protótipo 2012 - RS#02
+                                    br
+                                    ul(style='text-align: justify;')
+                                        li
+                                            h4 Descrição Técnica
+                                        ul
+                                            li Motor GAS-GAS 450, Lateral
+                                            li Refrigeração a água
+                                            li
+                                                | Injeção Eletrônica Protune PR330
+                                    img(src='/img/prototipos/rs02/rs02_2.jpg' width='500' height='250')
+                                    img(src='/img/prototipos/rs02/rs02_1.png' width='500' height='250')
+                                    br
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // RS#03
+        #rs03.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h3(style='text-align: center')  Protótipo 2013 - RS#03
+                                    br
+                                    ul(style='text-align: justify;')
+                                        li
+                                            h4 Descrição Técnica
+                                        ul
+                                            li Motor GAS-GAS 450, Lateral
+                                            li Refrigeração a água
+                                            li
+                                                | Injeção Eletrônica Protune PR330
+                                    img(src='/img/prototipos/rs03/rs03_2.jpg' width='500' height='250')
+                                    img(src='/img/prototipos/rs03/rs03_1.png' width='500' height='250')
+                                    br
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Bagual
+        #bagual.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h3 Protótipo 2015 - Bagual
+                                    br
+                                    ul(style='text-align: justify;')
+                                        li
+                                            h4 Conquistas
+                                    div(style='text-align: justify;')
+                                        h4 Fórmula SAE Brasil 2015
+                                        ul
+                                            li 2º Lugar Geral
+                                            li 1º Lugar no Enduro
+                                            li 1º Lugar na Economia de Combustível
+                                            li 2º Lugar na prova de Custos
+                                            li 3º Lugar na apresentação do Business Case
+                                    ul(style='text-align: justify;')
+                                        li
+                                            h4 Descrição Técnica
+                                        ul
+                                            li Peso: 232kg
+                                            li Potência: 29hp
+                                            li Torque: 30Nm
+                                            li Força G: 1,4g 
+                                        li
+                                            h4 Provas Dinâmicas
+                                        ul
+                                            li Tempo da prova de aceleração: 5,4s
+                                            li Tempo da prova Enduro: 2059,4s
+                                            li Tempo da prova Skip Pad: 5,34s
+                                            li Tempo da prova Autocross: 82,3s
+                                        li
+                                            h4 Prova Estáticas
+                                        ul
+                                            li Design: 51,75 pontos
+                                            li Custos: 71,00 pontos
+                                            li Business Presentation: 70,11 pontos
+                                    img(src='/img/prototipos/bagual/bagual_2.jpg' width='500' height='250')
+                                    img(src='/img/prototipos/bagual/bagual_1.png' width='500' height='250')
+                                    br
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Minuano
+        #minuano.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body                                      
+                                    h3(style='text-align: center') Protótipo 2016 - Minuano
+                                    br                                    
+                                    div(style='text-align: center;')
+                                        h4 Conquistas
+                                    div(style='text-align: justify;')
+                                        h4 Fórmula SAE Brasil 2016
+                                        ul
+                                            li 2º Lugar na apresentação do Business Case
+                                    ul(style='text-align: justify;')
+                                        li
+                                            h4 Descrição Técnica
+                                        ul
+                                            li Peso: 218kg
+                                            li Potência: 25hp
+                                            li Torque: 26,4Nm
+                                            li Força G: 1,6g 
+                                        li
+                                            h4 Provas Dinâmicas
+                                        ul
+                                            li Tempo da prova de aceleração: 5,7s
+                                            li Tempo da prova Enduro: -s
+                                            li Tempo da prova Skip Pad: 5,94s
+                                            li Tempo da prova Autocross: 90,51s
+                                        li
+                                            h4 Prova Estáticas
+                                        ul
+                                            li Design: 79,45 pontos
+                                            li Custos: 26,00 pontos
+                                            li Business Presentation: 70,26 pontos
+                                    img(src='/img/prototipos/minuano/minuano_3.jpg' width='500' height='250')
+                                    img(src='/img/prototipos/minuano/minuano_1.png' width='500' height='250')
+                                    img(src='/img/prototipos/minuano/minuano_2.png' width='500' height='250')
+                                    br  
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Ximango
+        #ximango.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body                                      
+                                    h3(style='text-align: center') Protótipo 2017 - Ximango
+                                    br                                    
+                                    div(style='text-align: center;')
+                                        h4 Conquistas
+                                    div(style='text-align: justify;')
+                                        h4 Fórmula SAE Brasil 2017
+                                        ul
+                                            li 2º Lugar na apresentação do Business Case
+                                    ul(style='text-align: justify;')
+                                        li
+                                            h4 Descrição Técnica
+                                        ul
+                                            li Peso: 233kg
+                                            li Potência: 44hp
+                                            li Torque: 44Nm
+                                            li Força G: 1,4g 
+                                        li
+                                            h4 Provas Dinâmicas
+                                        ul
+                                            li -
+                                        li
+                                            h4 Prova Estáticas
+                                        ul
+                                            li Design: 68,80 pontos
+                                            li Custos: 52,20 pontos
+                                            li Business Presentation: 71,00 pontos
+                                    img.img-responsive(src='/img/prototipos/ximango/ximango_1.jpg')
+                                    br  
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Faça parte da equipe!
+        #facapartedaequipe.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h4.service-heading Faça parte da nossa equipe!
+                                    p
+                                        | Se interessou em participar da nossa equipe? Mande um email para nós, com uma carta motivacional e seu currículo, que quando tivermos um processo seletivo aberto, entraremos em contato!
+                                    p
+                                        | Fique atento as nossas redes sociais, quando for lançado um novo processo seletivo, anunciaremos por elas!
+                                    p
+                                        | Envie um email para marketing.rsracing@gmail.com !
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Visao!
+        #visao.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h4.service-heading Valores
+                                    ul.fa-ul(style='text-align:justify;')
+                                        li
+                                            i.fa-li.fa.fa-handshake-o
+                                            b Companheirismo
+                                            p
+                                                | Temos espírito de equipe, mantendo sempre em mente o impacto que cada ação isolada gera na equipe como um todo. Tendo respeito pelos outros membros, trabalhamos em um clima de parceria e descontração.
+                                        li
+                                            i.fa-li.fa.fa-heart
+                                            b Paixão pelo projeto
+                                            p
+                                                | Não nos limitamos somente as responsabilidade que nos comprometemos inicialmente. Temos sentimento de dono e flexibilidade para contribuir para o projeto como um todo, tendo sangue no olho para fazer o que for preciso para atingirmos nosso objetivo.
+                                        li
+                                            i.fa-li.fa.fa-graduation-cap
+                                            b Transferência de conhecimento
+                                            p
+                                                | Prezamos pelo desenvolvimento constante dos membros e entendemos que a troca de informações é essencial para a perpetuação do projeto. O conhecimento só gera valor para a equipe quando compartilhado entre os integrantes.
+                                        li
+                                            i.fa-li.fa.fa-clock-o
+                                            b Organização e profissionalismo
+                                            p
+                                                | Trabalhamos com controle das tarefas, prazos e custos. Nossa atitude é profissional e responsável, contribuindo para uma boa imagem da equipe e prezando pela segurança dos nossos membros.
+                                        li
+                                            i.fa-li.fa.fa-line-chart
+                                            b Insatisfação Positiva
+                                            p
+                                                | Somos inquietos. Através de inovação e criatividade, olhamos para o projeto com senso crítico, visando evoluir constantemente.
+                                        li
+                                            i.fa-li.fa.fa-eye
+                                            b Integridade
+                                            p
+                                                | Estabelecemos uma relação de transparência e ética em todas as atividades que exercemos.
+
+
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+         //Titulos!
+        #titulos.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h4.service-heading Títulos
+                                    ul.fa-ul(style='text-align:justify;')
+                                        li
+                                            p
+                                                | 2º Lugar Geral - Fórmula SAE Brasil 2015
+                                        li
+                                            p
+                                                | 1º Lugar na Prova Enduro - Fórmula SAE Brasil 2015
+                                        li
+                                            p
+                                                | 1º Lugar na Prova de Economia de Combustível - Fórmula SAE Brasil 2015
+                                        li
+                                            p
+                                                | 2º Lugar Prova de Custos - Fórmula SAE Brasil 2015
+                                        li
+                                            p
+                                                | 3º Lugar na Apresentação do Business Case - Fórmula SAE Brasil 2015
+                                        li
+                                            p
+                                                | 10º Lugar na Apresentação do Business Case - Fórmula SAE Lincoln 2016
+                                        li
+                                            p
+                                                | 2º Lugar na Apresentação do Business Case - Fórmula SAE Brasil 2016
+
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Seja nosso patrocinador!
+        #sejapatrocinador.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        .lr
+                            .rl
+                    .container
+                        .row
+                            .col-lg-8.mx-auto
+                                .modal-body
+                                    h4.service-heading Seja nosso Patrocinador!
+                                    p(style='text-align:justify;')
+                                        | Um carro de Fórmula SAE é um projeto ambicioso que requer muito investimento material, financeiro e humano. Por ser um projeto voluntário, a presença de apoio tecnológico e industrial se torna essencial para que consigamos atingir nossos objetivos. Apoiando a RS Racing UFRGS financeiramente durante todo o processo de desenvolvimento de projeto, você está também apoiando futuros engenheiros no seu desenvolvimento acadêmico e profissional. Ficou interessado? Então entre em contato conosco!
+                                    p
+                                        | Entre em contato conosco para saber mais!
+                                    p
+                                        | Envie um email para marketing.rsracing@gmail.com !
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fa.fa-times
+                                        |                     Fechar
+        // Bootstrap core JavaScript
+        script(src='/static/jquery/jquery.min.js')
+        script(src='/static/popper/popper.min.js')
+        script(src='/static/bootstrap/js/bootstrap.min.js')
+        // Plugin JavaScript
+        script(src='/static/jquery-easing/jquery.easing.min.js')
+        // Contact form JavaScript
+        script(src='/js/jqBootstrapValidation.js')
+        script(src='/js/contact_me.js')
+        // Custom scripts for this template
+        script(src='/js/agency.min.js')
